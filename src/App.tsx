@@ -6,6 +6,7 @@ const About = lazy(() => import('./pages/about/About'))
 const Home = lazy(() => import('./pages/home/Home'))
 
 import AppNav from './components/nav/AppNav'
+import AppFooter from './components/footer/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <AppFooter />
     </>
   )
 }
